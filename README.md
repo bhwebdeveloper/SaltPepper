@@ -1,4 +1,4 @@
-LiteGrid
+Salt & Pepper
 ========
 
-Lite Grid is a prototype responsive grid that is currently under construction
+Salt & Pepper is a bare bones, simplified responive grid for modern browsers.
