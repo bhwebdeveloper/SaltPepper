@@ -1,0 +1,91 @@
+﻿/*
+*Salt & Pepper v1.0
+*Copyright 2013, Brian A. Harvey
+*Free to use under MIT license (http://www.opensource.org/licenses/mit-license.php)    
+*/
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    /* Removes padding behavior on widths */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Targets column elements */
+[class*='column-'] {
+  float: left;
+  padding: 10px;
+}
+
+/* Floats last column to the right */
+[class*='column-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+
+/* Clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Main Widths */
+.column-1  {width: 8.33333333%;}
+.column-2  {width: 16.6666667%;}
+.column-3  {width: 25%;}
+.column-4  {width: 33.3333333%;}
+.column-5  {width: 41.6666667%;}
+.column-6  {width: 50%;}
+.column-7  {width: 58.3333333%;}
+.column-8  {width: 66.6666667%;}
+.column-9  {width: 75%;}
+.column-10 {width: 83.3333333%;}
+.column-11 {width: 91.6666667%;}
+.column-12 {width: 100%;}
+
+
+/* Landscape mobile and smaller
+===============================*/
+@media (max-width: 480px) {
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-8,
+  .column-9,
+  .column-10,
+  .column-11,
+  .column-12 {
+    width: 100%; 
+  }
+}
+
+/* Mobile to Tablet Portrait
+===============================*/
+@media (min-width: 480px) and (max-width: 800px) {
+  .column-4,
+  .column-8,
+  .column-10,
+  .column-12 {
+    width: 100%;
+  }
+
+  .column-1,
+  .column-2,
+  .column-3,
+  .column-5,
+  .column-6,
+  .column-7,
+  .column-9,
+  .column-11 {
+    width: 50%;
+  }
+}
